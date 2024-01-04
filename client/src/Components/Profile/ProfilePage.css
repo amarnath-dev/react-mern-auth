@@ -1,0 +1,91 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-container-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container-profile .items-container-body {
+    position: absolute;
+    top: 150px;
+    background-color: rgb(159, 234, 234);
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.profile-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image {
+    position: absolute;
+    top: 95px;
+    z-index: 800;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-btn {
+    position: absolute;
+    top: 160px;
+    right: 580px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.user-details {
+    margin-top: 100px;
+    line-height: 35px;
+}
+
+.profile-input {
+    position: absolute;
+    top: 200px;
+    right: 480px;
+    z-index: 500;
+    margin-top: 10px;
+    display: none;
+}
+
+.profile-input-display {
+    position: absolute;
+    top: 200px;
+    right: 480px;
+    z-index: 500;
+    margin-top: 10px;
+    display: block;
+}
+
+.file-update {
+    width: 60px;
+    height: 30px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.file-update-display {
+    width: 60px;
+    height: 30px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-container button {
+    margin-left: 8px;
+}

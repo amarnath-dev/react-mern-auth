@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    background-color: aqua;
+    background-image: url("https://img.freepik.com/premium-vector/network-connection-background-abstract-style_23-2148875738.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703116800&semt=ais");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+    margin-top: 200px;
+}
+
+.input-container input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 30px;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.radio-container input {
+    margin-top: 10px;
+}
+
+.radio-male {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.radio-female {
+    font-size: 20px;
+}
+
+.form-error {
+    color: red;
+}
+
+.login-link {
+    margin-top: 10px;
+}
+
+.login-register {
+    cursor: pointer;
+}

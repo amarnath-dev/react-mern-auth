@@ -1,0 +1,35 @@
+.form {
+    background-image: url("https://t4.ftcdn.net/jpg/01/19/11/55/360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input input {
+    width: 300px;
+    height: 30px;
+    margin-top: 50px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    width: 60px;
+    height: 25px;
+    background-color: beige;
+}
+
+.error-div{
+    margin-top: 150px;
+    color: red;
+}
+
+.login-link {
+    margin-top: 10px;
+}
