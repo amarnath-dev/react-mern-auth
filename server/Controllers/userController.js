@@ -4,9 +4,6 @@ const { createToken } = require("../middleware/jwt")
 const { checkUserAuth } = require('../middleware/jwt');
 
 module.exports.register_user = async (req, res) => {
-
-    console.log("reached at register new user")
-
     try {
         const newUser = new User({
             name: req.body.name,
@@ -72,7 +69,7 @@ module.exports.update_profile = async (req, res) => {
 
 module.exports.user_auth_check = async (req, res) => {
     try {
-        const result = await checkUserAuth(req, res);
+        const result = checkUserAuth(req, res);
         if (!result) {
             console.log("User is not Authenticated")
         }

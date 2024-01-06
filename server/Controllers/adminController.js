@@ -29,8 +29,6 @@ module.exports.admin_login = async (req, res) => {
             let dbPassword = checkUser.password;
             if (dbPassword === password) {
                 let token = createToken(checkUser)
-                // const maximumAge = (3 * 24 * 60 * 60) * 1000;
-                // res.cookie("adminAcessToken", token, { maxAge: maximumAge })
                 return res.status(200).json({ status: "sucess", token: token });
             } else {
                 return res.status(401).json({ error: "Un-authorized Access" })
