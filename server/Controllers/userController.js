@@ -35,7 +35,6 @@ module.exports.login_user = async (req, res) => {
 
             if (originalText === password) {
                 const token = createToken(userExists);
-                console.log("token is created", token)
                 return res.status(200).json({ status: "success", user: userExists, token: token });
             } else {
                 return res.status(401).json({ error: "Un-authorized Access" })
@@ -49,7 +48,6 @@ module.exports.login_user = async (req, res) => {
 }
 
 module.exports.update_profile = async (req, res) => {
-
     try {
         if (!req.file) {
             console.log("No req file available")

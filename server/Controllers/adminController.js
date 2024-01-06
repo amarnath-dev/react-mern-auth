@@ -62,7 +62,6 @@ module.exports.admin_edit = async (req, res) => {
 }
 
 module.exports.admin_edit_put = async (req, res) => {
-    console.log("reched at admin edit")
     try {
         const userId = req.params.userId;
         const user = await User.findById(userId)
@@ -77,7 +76,6 @@ module.exports.admin_edit_put = async (req, res) => {
             }
         }, { new: true })
 
-        console.log("Updated User", userUpdate)
         return res.status(200).json({ status: "success", user: userUpdate })
 
     } catch (error) {
@@ -102,8 +100,6 @@ module.exports.admin_delete_user = async (req, res) => {
 module.exports.admin_search = async (req, res) => {
     try {
         const { q } = req.query;
-
-        //Search function
         const search = (data) => {
             return data.filter((item) => item.name.toLowerCase().includes(q));
         }
